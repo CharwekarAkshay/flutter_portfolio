@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:profile/constants.dart';
 import 'package:profile/screens/main/components/user_info.dart';
 
-import '../../../components/animated_circular_progress_indicator.dart';
 import 'coding.dart';
+import 'knowledges.dart';
 import 'location_information.dart';
 import 'skills.dart';
 
@@ -42,6 +43,8 @@ class SideMenu extends StatelessWidget {
                   Skills(),
                   SizedBox(height: defaultPadding),
                   Coding(),
+                  SizedBox(height: defaultPadding),
+                  Knowledges(),
                 ],
               ),
             ),
